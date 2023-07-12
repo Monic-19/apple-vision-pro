@@ -13,6 +13,7 @@
     position: relative;
     overflow: hidden;
     font-family: SFPRODISPLAY;
+    background-color: #000000;
 }
 
 .page{
@@ -89,7 +90,7 @@
         font-weight: 400;
         top: 50%;
         left :50%;
-        transform: translate(-50% , -50%);
+        transform: translateX(-50%);
         width: 90%;
     }
 
@@ -212,12 +213,13 @@
 }
 
 .gap2, .gap3, .gap4, .gap5 ,.gap6 ,.gap7 ,.gap8 ,.gap9{  
-    height: 70vh;
+    height: 60vh;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 10vh;
+    background-color: #fff;
 
     >.left{
         width: 40%;
@@ -245,7 +247,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: 4vh;
+            margin-top: 8vh;
             color: #fff;
             background: rgb(255, 89, 0);
             font-size: 18px;
@@ -536,6 +538,7 @@
     justify-content: center;
     padding: 2vw;
     gap: 2vw;
+    background-color: #fff;
 
     >.left{
         height: 100%;
@@ -557,7 +560,7 @@
 .page23{
     height: 100vh;
     width: 100vw;
-    background: #ff4141;
+    background-color: #ff0000;
 }
 
 .page24{
@@ -566,7 +569,9 @@
     padding: 2vw 4vw;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
+    background-color: #ffffff; 
+ 
 
     >.center{
         height: 100%;
@@ -577,7 +582,7 @@
 }
 
 .gap6, .gap7, .gap8{
-    height: 50vh;
+    height: 45vh;
 }
 
 .page25{
@@ -679,7 +684,7 @@
 }
 
 
-.page29{
+.page29 ,.page30{
     height: 150vh;
     width: 100vw;
     background: rgb(0, 0, 0);
@@ -695,7 +700,7 @@
         z-index: 10;
     }
 
-    .on{
+    >.on{
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
@@ -704,7 +709,7 @@
     }
 
     .text{
-        padding-top: 3vh;
+        padding-top: 10vh;
         background-color: #000000;
         height: 40vh;
         position: absolute;
@@ -730,5 +735,259 @@
                 color: white;
             }
         }
+    }
+}
+
+.page31{
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    padding-top: 18vh;
+    
+    >img{
+        opacity: 0.2;
+    }
+
+}
+
+.page32{
+    height: 70vh;
+    width: 100vw;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+    >h2{
+        font-size: 33px;
+    }
+
+    >h3{
+        margin-top: 5vh;
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 100;
+        color: #86868B;
+        >span{
+            color: white;
+        }
+    }
+    
+      >button{
+        
+        border: 2px solid black;
+        border-radius: 50px;
+        padding:8px 25px;
+        font-size: 18px;
+        background-color: #fff;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8vh;
+
+        >span{
+            padding-right: 2vw;
+            font-size: 40px;
+        }
+    }
+    
+    >button:hover{
+        background-color: #E6E6E6;
+
+    }
+}
+
+.page33{
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+    text-align: center;
+
+    >h3{
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    >h1{
+        font-size: 80px;
+    }
+
+    >p{
+        font-size: 25px;
+        line-height: 35px;
+        color: #86868B;
+
+        >span{
+            color: rgb(0, 0, 0);
+        }
+    }
+
+    >button{
+        border: none;
+        border-radius: 50px;
+        padding:17px 30px;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8vh;
+        color: #fff;
+        background: rgb(255, 89, 0);
+        font-size: 18px;
+
+        >span{
+            padding-right: 1vw;
+            font-size: 25px;
+            font-weight: 100;
+        }
+    }
+    
+    >button:hover{
+        background-color: #FF6B2B;
+    }
+}
+
+
+.page34{
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:2vw 4vw;
+    padding-top: 6vw;
+
+    >.center{
+        width: 100%;
+        height: 100%;
+        background-color: #F5F5F7;
+        display: flex;
+       
+
+        >.left{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2vh;
+            padding-left: 8vw;
+
+            >img{
+                margin-top: -20vh;
+                width: 10%;
+            }
+
+            >h1{
+                font-size: 55px;
+                line-height: 65px;
+            }
+
+            >h2{
+                font-size: 25px;
+                color: #86868B;
+                line-height: 35px;
+                word-spacing: 1px;
+            }
+        }
+
+        .right{
+            width: 40%;
+            height: 100%;
+            background-image: url(https://www.apple.com/v/apple-vision-pro/a/images/overview/routers/ar_tile__que64jqs2t2e_medium_2x.jpg);
+            background-size: cover;
+        }
+    }
+}
+
+
+.page35{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 2vw 4vw;
+    padding-top: 1vw;
+
+    >.center{
+        width: 100%;
+        height: 100%;
+        background-color: #F5F5F7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        >img{
+            margin-left: -2vh;
+        }
+
+        >h1{
+            margin-top: 3vh;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        >h3{
+            margin-top: 3vh;
+            width: 70%;
+            text-align: center;
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: lighter;
+            color: #1D1D1F;
+        }
+
+        >.link{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            >h4{
+                margin-top: 3vh;
+            color: #0065CC;
+            font-size: 25px;
+
+              >span{
+                margin-left: .5vw;
+              }
+            }
+        }
+    }
+
+}
+
+.page36{
+    height: 70vh;
+    width: 100vw;
+    background-color: #F5F5F7;
+    display: flex;
+    flex-direction: column;
+
+    >p{
+        margin-top: 2vh;
+        font-size: 12px;
+        line-height: 18px;
+        margin-left: 30%;
+
+    }
+
+    >.line{
+        margin-top: 2vh;
+        margin-left: 30%;
+        height: 1px;
+        width: 40%;
+        background-color: #86868B;
     }
 }

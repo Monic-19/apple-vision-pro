@@ -634,15 +634,48 @@ canvas1();
 var tl9 = gsap.timeline({
   scrollTrigger: {
     trigger: `.page29`,
-    start: `10% top`,
+    start: `15% top`,
     scrub: 1,
     scroller: `.main`,
-    pin: true,
+    // pin: true,
+    // markers :true
   }
 })
 
 tl9.to(".page29 .off", {
   opacity : 0
+})
+
+
+var tl10 = gsap.timeline({
+  scrollTrigger: {
+    trigger: `.page30`,
+    start: `5% top`,
+    scrub: 1,
+    scroller: `.main`,
+    // pin: true,
+    // markers :true
+  }
+})
+
+tl10.to(".page30 .off", {
+  opacity : 0
+})
+
+
+
+var tl11 = gsap.timeline({
+  scrollTrigger: {
+    trigger: `.page31`,
+    start: `5% top`,
+    scrub: 1,
+    scroller: `.main`,
+    // markers :true
+  }
+})
+
+tl10.to(".page31 img", {
+  opacity : 1
 })
 
 
