@@ -631,6 +631,8 @@ end: `80% top`,
 canvas1();
 
 
+
+
 var tl9 = gsap.timeline({
   scrollTrigger: {
     trigger: `.page29`,
@@ -679,3 +681,79 @@ tl10.to(".page31 img", {
 })
 
 
+let picture = 1;
+
+function moveLeft(){
+
+  picture--;
+
+  if (picture < 1){
+    picture = 3
+  }
+
+  console.log("pic" + picture)
+
+  let pos = document.querySelector(".page23 .center");
+
+  if(picture === 1){
+    set1();
+  }
+
+  else if(picture === 2){
+    set2();
+  }
+
+  else if(picture === 3){
+    set3();
+  }
+
+}
+
+function moveRight(){
+
+  picture++;
+
+  if (picture > 3){
+    picture =1
+  }
+
+  console.log("pic" + picture)
+
+  let pos = document.querySelector(".page23 .center");
+
+  if(picture === 1){
+    pos.style.backgroundImage = "url('https://www.apple.com/v/apple-vision-pro/a/images/overview/visionos/environment_mt_hood__bowcnbltk57m_medium_2x.jpg')";
+  }
+
+  else if(picture === 2){
+    pos.style.backgroundImage = "url('https://www.apple.com/v/apple-vision-pro/a/images/overview/visionos/environment_white_sand__d9yi9qfevrue_medium_2x.jpg')";
+  }
+
+  else if(picture === 3){
+    pos.style.backgroundImage = "url('https://www.apple.com/v/apple-vision-pro/a/images/overview/visionos/environment_moon__cddspuen58eq_medium_2x.jpg')";
+  }
+
+}
+
+function set1(){
+  console.log("set1 called")
+  document.querySelector(".page23 .center").style.backgroundImage = "url('https://www.apple.com/v/apple-vision-pro/a/images/overview/visionos/environment_mt_hood__bowcnbltk57m_medium_2x.jpg')";
+  document.querySelector(".page23 .bottom .b1").style.color = "white";
+  document.querySelector(".page23 .bottom .b2").style.color = "#86868B";
+  document.querySelector(".page23 .bottom .b3").style.color = "#86868B";
+}
+
+function set2(){
+  document.querySelector(".page23 .center").style.backgroundImage = "url('https://www.apple.com/v/apple-vision-pro/a/images/overview/visionos/environment_white_sand__d9yi9qfevrue_medium_2x.jpg')";
+  document.querySelector(".page23 .bottom .b2").style.color = "white";
+  document.querySelector(".page23 .bottom .b1").style.color = "#86868B";
+  document.querySelector(".page23 .bottom .b3").style.color = "#86868B";
+}
+
+
+function set3(){
+  document.querySelector(".page23 .center").style.backgroundImage = "url('https://www.apple.com/v/apple-vision-pro/a/images/overview/visionos/environment_moon__cddspuen58eq_medium_2x.jpg')";
+  document.querySelector(".page23 .bottom .b3").style.color = "white";
+  document.querySelector(".page23 .bottom .b1").style.color = "#86868B";
+  document.querySelector(".page23 .bottom .b2").style.color = "#86868B";
+}
