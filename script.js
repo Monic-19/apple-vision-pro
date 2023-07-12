@@ -519,7 +519,7 @@ canvas();
 
 
 function canvas1(){
-  const canvas = document.querySelector(".page26 canvas");
+const canvas = document.querySelector(".page26 canvas");
 const context = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
@@ -629,4 +629,20 @@ end: `80% top`,
 });
 }
 canvas1();
+
+
+var tl9 = gsap.timeline({
+  scrollTrigger: {
+    trigger: `.page29`,
+    start: `10% top`,
+    scrub: 1,
+    scroller: `.main`,
+    pin: true,
+  }
+})
+
+tl9.to(".page29 .off", {
+  opacity : 0
+})
+
 

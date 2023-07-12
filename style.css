@@ -642,3 +642,93 @@
         }
     }
 }
+
+.page28{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+
+    >video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        /* position: absolute; */
+    }
+
+    >.text{
+        position: absolute;
+        color: white;
+        bottom: 10%;
+        right: 17%;
+
+        >h2{
+            font-size: 35px;
+            margin-bottom: 4vh;
+        }
+
+        >p{
+            font-size: 20px;
+            line-height: 30px;
+            color: #86868B;
+
+            >span{
+                color: white;
+            }
+        }
+    }
+}
+
+
+.page29{
+    height: 150vh;
+    width: 100vw;
+    background: rgb(0, 0, 0);
+    position: relative;
+
+
+    >.off{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        width: 70%;
+        z-index: 10;
+    }
+
+    .on{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        width: 70%;
+    }
+
+    .text{
+        padding-top: 3vh;
+        background-color: #000000;
+        height: 40vh;
+        position: absolute;
+        z-index: 100;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        color: #fff;
+        text-align: center;
+
+        >h2{
+            font-size: 35px;
+            margin-bottom: 5vh;
+        }
+
+        >h3{
+            font-size: 20px;
+            letter-spacing: 1px;
+            line-height: 25px;
+            color: #86868B;
+
+            >span{
+                color: white;
+            }
+        }
+    }
+}
