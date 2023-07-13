@@ -69,6 +69,7 @@ var tl = gsap.timeline({
   scrollTrigger: {
     trigger: `.page1`,
     start: `top top`,
+    end : `70% top`,
     scrub: 1,
     scroller: `.main`,
     // markers :true,
@@ -87,6 +88,7 @@ var tl1 = gsap.timeline({
     trigger: `.page2`,
     start: `top top`,
     // end : "bottom top",
+    end : `70% top`,
     scrub: 1,
     scroller: `.main`,
     pin: true,
@@ -103,6 +105,7 @@ var tl2 = gsap.timeline({
     trigger: `.page3`,
     start: `top top`,
     // end : "bottom top",
+    end : `70% top`,
     scrub: 1,
     scroller: `.main`,
     pin: true,
@@ -119,6 +122,7 @@ var tl3 = gsap.timeline({
     trigger: `.page4`,
     start: `top top`,
     // end : "bottom top",
+    end : `70% top`,
     scrub: 1,
     scroller: `.main`,
     pin: true,
@@ -134,6 +138,7 @@ var tl4 = gsap.timeline({
   scrollTrigger: {
     trigger: `.page6`,
     start: `top top`,
+    end : `70% top`,
     scrub: 1,
     scroller: `.main`,
     pin: true,
@@ -144,9 +149,15 @@ var tl4 = gsap.timeline({
 tl4.to(".page6 h1", {
   top: `-50%`
 }, 'a')
+
 tl4.to(".page6 h3", {
   top: `-50%`
 }, 'a')
+
+tl4.to(".page6 video" , {
+  padding : "6vh",
+  opacity : 1,
+})
 
 var tl5 = gsap.timeline({
   scrollTrigger: {
@@ -166,6 +177,11 @@ tl5.to(".page7 h1", {
 tl5.to(".page7 h3", {
   top: `-50%`
 }, 'b')
+
+tl5.to(".page7 video" , {
+  padding : "6vh",
+  opacity : 1,
+})
 
 
 var tl6 = gsap.timeline({
@@ -187,6 +203,11 @@ tl6.to(".page8 h3", {
   top: `-50%`
 }, 'c')
 
+tl6.to(".page8 video" , {
+  padding : "6vh",
+  opacity : 1,
+})
+
 
 var tl7 = gsap.timeline({
   scrollTrigger: {
@@ -206,6 +227,11 @@ tl7.to(".page9 h1", {
 tl7.to(".page9 h3", {
   top: `-50%`
 }, 'd')
+
+tl7.to(".page9 video" , {
+  padding : "6vh",
+  opacity : 1,
+})
 
 
 
@@ -676,7 +702,7 @@ var tl11 = gsap.timeline({
   }
 })
 
-tl10.to(".page31 img", {
+tl11.to(".page31 img", {
   opacity : 1
 })
 
@@ -757,3 +783,98 @@ function set3(){
   document.querySelector(".page23 .bottom .b1").style.color = "#86868B";
   document.querySelector(".page23 .bottom .b2").style.color = "#86868B";
 }
+
+var tl12 = gsap.timeline({
+  scrollTrigger: {
+    trigger: `.page12`,
+    start: `0% top`,
+    end : "bottom bottom",
+    scrub: 1,
+    scroller: `.main`,
+    // markers :true
+  }
+})
+
+tl12.to(".page12 h1", {
+  opacity :1
+})
+
+
+var tl13 = gsap.timeline({
+  scrollTrigger: {
+    trigger: `.page13`,
+    start: `0% top`,
+    end : "bottom bottom",
+    scrub: 1,
+    scroller: `.main`,
+    // markers :true
+  }
+})
+
+tl13.to(".page13 h1", {
+  opacity :1
+})
+
+
+var tl14 = gsap.timeline({
+  scrollTrigger: {
+    trigger: `.page14`,
+    start: `0% top`,
+    end : "bottom bottom",
+    scrub: 1,
+    scroller: `.main`,
+    // markers :true
+  }
+})
+
+tl14.to(".page14 h1", {
+  opacity :1
+})
+
+
+var tl15 = gsap.timeline({
+  scrollTrigger: {
+    trigger: `.page15`,
+    start: `0% top`,
+    end : "bottom bottom",
+    scrub: 1,
+    scroller: `.main`,
+    // markers :true
+  }
+})
+
+tl15.to(".page15 h1", {
+  opacity :1
+})
+
+
+var tl16 = gsap.timeline({
+  scrollTrigger: {
+    trigger: `.page16`,
+    start: `0% top`,
+    end : "bottom bottom",
+    scrub: 1,
+    scroller: `.main`,
+    // markers :true
+  }
+})
+
+tl16.to(".page16 h1", {
+  opacity :1
+})
+
+
+var tl17 = gsap.timeline({
+  scrollTrigger: {
+    trigger: `.page17`,
+    start: `0% top`,
+    end : "bottom bottom",
+    scrub: 1,
+    scroller: `.main`,
+    // markers :true
+  }
+})
+
+tl17.to(".page17 h1", {
+  opacity :1
+})
