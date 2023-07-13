@@ -1,11 +1,10 @@
-# Apple Vision Pro Website Clone
+# <p align = "center"> Apple Vision Pro Website Clone</p>
 
-## Link :  https://monic-19.github.io/apple-vision-pro/
-
+## <p align = "center">Link :  https://monic-19.github.io/apple-vision-pro/</p>
 
 ## <p align = "center">Website Layout :</p>
 
-<br><br><br>
+<br><br>
 
 <p align = "center">
 <img width="1425" alt="Screenshot 2023-07-13 at 2 06 57 PM" src="https://github.com/Monic-19/apple-vision-pro/assets/118365854/77683ef5-a9a6-46ab-b9ce-e26c9c05637e">
